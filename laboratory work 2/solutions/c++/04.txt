@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    const double *a=new double(7);
+    double *b=new double(2.3),*x=new double(0),*p=new double(0),*y=new double(0);
+    cout<<"Введите b:";
+    cin>>*b;
+    
+    
+    *x=sqrt(*a)+sqrt(*b);
+    *p=sqrt(pow(*x,2)+pow(*a,2));
+    *y=pow(atan(fabs(*p)),3);
+
+    cout<<"x="<<*x<<endl;
+    cout<<"p="<<*p<<endl;
+    cout<<"y="<<*y<<endl;
+    
+    
+
+    return 0;
+}

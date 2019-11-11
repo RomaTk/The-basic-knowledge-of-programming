@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    double *n=new double(0),*a=new double(2.3),*r=new double(0),*R=new double(0);
+    cout<<"Введите n:";
+    cin>>*n;
+    cout<<"Введите a:";
+    cin>>*a;
+    
+    
+    *R=*a/(2*sin(M_PI/(*n)));
+    *r=*a/tan(M_PI/(*n));
+
+    cout<<"R="<<*R<<endl;
+    cout<<"r="<<*r<<endl;
+    
+    
+
+    return 0;
+}

@@ -1,0 +1,30 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    double *h=new double(0),*y=new double(0),*t=new double(0);
+    
+    cout<<"Введите h:";
+    cin>>*h;
+    cout<<"Введите y:";
+    cin>>*y;
+    
+    *t=(0.355*pow(*h,2)-4.355)/(exp(*y+*h)+sqrt(2.7**y));
+    
+    cout<<"t="<<*t;
+    
+    
+
+    return 0;
+}
